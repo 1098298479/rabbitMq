@@ -18,7 +18,7 @@ public class Consumer {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("rabbitmq.study.com");
+		factory.setHost("120.78.4.193");
 		factory.setUsername("admin");
 		factory.setPassword("admin");
 
@@ -28,7 +28,7 @@ public class Consumer {
 				// 3、从连接工厂获取连接
 				Connection connection = factory.newConnection("消费者");
 				// 4、从链接中创建通道
-				Channel channel = connection.createChannel();) {
+				Channel channel = connection.createChannel()) {
 
 			// 定义收到消息后的回调
 			DeliverCallback callback = new DeliverCallback() {

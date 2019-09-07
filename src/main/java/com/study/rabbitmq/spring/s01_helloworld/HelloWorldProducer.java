@@ -23,7 +23,8 @@ public class HelloWorldProducer {
 	 * 其完成的工作为：channel.queueDeclare("hello",false, false, false, null);
 	 * 我们也可以自己手动通过 AmqpAdmin.declareXXX(xxx)方法来创建我们需要的queue、exchange、binding。
 	 * 
-	 * @Autowired private AmqpAdmin amqpAdmin;
+	 * @Autowired
+	 * private AmqpAdmin amqpAdmin;
 	 * 
 	 * public void send() { ... this.amqpAdmin.declareQueue(new Queue("hello"));
 	 * ... }

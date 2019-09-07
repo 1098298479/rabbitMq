@@ -32,7 +32,7 @@ public class WorkerQueueProducer {
 				// 消息内容
 				String message = "message task" + i;
 				// 6、发送消息
-				channel.basicPublish("", "queue1", null, message.getBytes());
+				channel.basicPublish("", "queue8", null, message.getBytes());
 				System.out.println("发送消息：" + message);
 				Thread.sleep(1000L);
 			}

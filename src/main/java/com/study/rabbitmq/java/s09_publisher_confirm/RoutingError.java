@@ -14,7 +14,7 @@ public class RoutingError {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("localhost");
+		factory.setHost("120.78.64.193");
 		factory.setPort(5672);
 		factory.setUsername("admin");
 		factory.setPassword("admin");
@@ -23,7 +23,7 @@ public class RoutingError {
 				// 3、从连接工厂获取连接 //可以给连接命个名
 				Connection connection = factory.newConnection("生产者");
 				// 4、从链接中创建通道
-				Channel channel = connection.createChannel();) {
+				Channel channel = connection.createChannel()) {
 
 			// 声明exchange,没有队列绑定到它
 			channel.exchangeDeclare("mandatory-ex", "fanout");

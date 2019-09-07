@@ -13,7 +13,7 @@ public class PublisherSetAttribute {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("localhost");
+		factory.setHost("120.78.64.193");
 		factory.setPort(5672);
 		factory.setUsername("admin");
 		factory.setPassword("admin");

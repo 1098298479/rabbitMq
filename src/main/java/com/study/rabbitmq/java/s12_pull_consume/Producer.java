@@ -10,7 +10,7 @@ public class Producer {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("localhost");
+		factory.setHost("120.78.64.193");
 
 		try (
 				// 3、从连接工厂获取连接

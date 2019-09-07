@@ -5,6 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 public class RoutingProducer {
+
 	private static final String EXCHANGE_NAME = "routing-sample";
 
 	public static void main(String[] argv) throws Exception {

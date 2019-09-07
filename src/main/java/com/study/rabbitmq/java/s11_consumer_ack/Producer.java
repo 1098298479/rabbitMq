@@ -19,7 +19,7 @@ public class Producer {
 				// 3、从连接工厂获取连接
 				Connection connection = factory.newConnection("生产者");
 				// 4、从链接中创建通道
-				Channel channel = connection.createChannel();) {
+				Channel channel = connection.createChannel()) {
 
 			for (int i = 0; i < 100; i++) {
 				// 消息内容

@@ -15,13 +15,13 @@ public class Producer {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("localhost");
+		factory.setHost("120.78.64.193");
 
 		try (
 				// 3、从连接工厂获取连接
 				Connection connection = factory.newConnection("生产者");
 				// 4、从链接中创建通道
-				Channel channel = connection.createChannel();) {
+				Channel channel = connection.createChannel()) {
 
 			// 开启延时消息插件：
 			// rabbitmq-plugins enable rabbitmq_delayed_message_exchange

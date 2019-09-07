@@ -32,7 +32,7 @@ public class ExchangeAttribute {
 			// 声明一个持久化、自动删除的的exchange
 			channel.exchangeDeclare("exchange-test-durable-autodelete", "fanout", true, true, null);
 
-			// 声明一个持久化、自动删除的的exchange
+			// 声明一个非持久化、自动删除的的exchange
 			channel.exchangeDeclare("exchange-test-nonDurable-autodelete", "fanout", false, true, null);
 
 			// 创建一个临时队列

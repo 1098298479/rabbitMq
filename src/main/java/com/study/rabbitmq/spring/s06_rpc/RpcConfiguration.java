@@ -24,7 +24,6 @@ public class RpcConfiguration {
 	public static class ServerConfig {
 
 		@Bean
-
 		public Queue queue() {
 			return new Queue("rpc.requests");
 		}

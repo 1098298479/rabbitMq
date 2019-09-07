@@ -16,7 +16,7 @@ public class PullConsume {
 		// 1、创建连接工厂
 		ConnectionFactory factory = new ConnectionFactory();
 		// 2、设置连接属性
-		factory.setHost("localhost");
+		factory.setHost("120.78.64.193");
 
 		String queueName = "queue1";
 

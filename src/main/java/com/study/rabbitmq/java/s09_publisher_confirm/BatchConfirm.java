@@ -19,7 +19,7 @@ public class BatchConfirm {
 				// 3、从连接工厂获取连接 //可以给连接命个名
 				Connection connection = factory.newConnection("生产者");
 				// 4、从链接中创建通道
-				Channel channel = connection.createChannel();) {
+				Channel channel = connection.createChannel()) {
 
 			// 声明exchange
 			channel.exchangeDeclare("mandatory-ex", "fanout");
